@@ -31,7 +31,9 @@ class Minotaur(Monster):
     level = 5
     
     def get_attack(self,attack):
+        
         self.attack == 15
+        00
     pass    
 
 class Titan(Monster):
