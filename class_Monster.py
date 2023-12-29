@@ -1,13 +1,15 @@
 import random
 
 class Monster:
-    def __init__(self,monster, health, level):
+    def __init__(self,heal):
         
-        self.monster = "Goblin" or "Minotaur" or "Titan"
+        self.monster = monster
         self.health = health
         self.level = level
         self.has_tiara 
         
+       https://github.com/LaGuize
+       
 
         random.choice(self.monster)
         
@@ -60,5 +62,7 @@ class Monster:
             
             
 
-    
+monster_1 = Monster("Goblin",200,1) 
+
+
     
