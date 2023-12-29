@@ -11,7 +11,7 @@ class Monster:
 
         random.choice(self.monster)
         
-        if level == 10:
+        if self.level == 10:
             self.has_tiara = True
              
         else:
