@@ -36,10 +36,11 @@ class Monster:
             print("You are now facing a Goblin")
 
 
-    def get_attack(self,attack):
+    def get_attack(self, hero):
 
-        self.attack = attack
-        print(f"The {self.monster} has inflicted{self.attack} points in damages")
+        hero.health -= self.attack
+
+        print(f"The {self.monster} has inflicted {self.attack} points in damages")
 
 
     def get_damage(self):

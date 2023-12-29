@@ -8,7 +8,7 @@ class Hero:
         self.has_tiara = has_tiara
         self.dead_flag = dead_flag
 
-    def use_attack(self, monster, attack = 100):
+    def use_attack(self, monster, attack = 10):
         monster.health -= attack
 
         print (f"{self.name} attacks the monster and removes {attack} health points")
