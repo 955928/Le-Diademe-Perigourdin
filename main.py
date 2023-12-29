@@ -29,7 +29,7 @@ while hero_1.health > 0 and monster_1.health > 0:
     print(monster_1.health)
     monster_1.get_attack(hero_1)
 # le heros fait son choix dans le terminal
-
+    
     # si il fait 1 : on retire de la vie au monstre correspondant à l'attaque du héros --> méthode use_attack
         # coder dans le fichier main un truc du genre monster.health = monster.health - hero.attack
 
