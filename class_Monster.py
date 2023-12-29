@@ -1,39 +1,35 @@
 import random
 
 class Monster:
-    def __init__(self, health, level):
+    def __init__(self):
 
         self.monster = random.choice(["Goblin", "Minotaur", "Titan"])
-        self.health = health
-        self.level = level
         
-
-        random.choice(self.monster)
+        
         
       
         
         if self.monster == "Titan":
             self.level = 10
+            self.health = 200
             self.attack = 40
             self.has_tiara = True
             print("Oh tremble in the presence of the notorius Titan")
     
             
-            if self.health == 0:
-                print("The TiTan has left behind the infamous Tiara of Perigourdin ")
-    
-            else:
-                print("Good luck little one!Try again")
+
 
             
         
         elif self.monster == "Minotaur":
+            self.health = 150
             self.level = 5
             self.attack = 15
             self.has_tiara = False
             print("The Minotaur has arisen!Beware of his might!")
         
         else:
+            self.health = 30
             self.level = 1
             self.attack = 5
             self.has_tiara = False
@@ -50,6 +46,8 @@ class Monster:
         
         self.health -= self.attack
         
+
+
         if self.health > 0:
             print(f"After having suffered {self.attack} the {self.monster} now has {self.health} points in health")
         
@@ -59,7 +57,10 @@ class Monster:
             
             
 
-monster_1 = Monster(100, 1)
+monster_1 = Monster(150,10)
+
+
+
 print(monster_1.monster)
 print(monster_1.health)
 print(monster_1.level)
