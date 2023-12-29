@@ -46,13 +46,13 @@ class Hero:
     
  
 
-jack = Hero("Jack", 100)
+# jack = Hero("Jack", 100)
 
-print(jack.health)
+# print(jack.health)
 
 
         
-jack.play()
+# jack.play()
 
 # jack.use_attack()
 # # jack.use_potion()

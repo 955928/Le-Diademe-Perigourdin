@@ -57,11 +57,11 @@ class Monster:
             
             
 
-monster_1 = Monster(150,10)
+# monster_1 = Monster(150,10)
 
 
 
-print(monster_1.monster)
-print(monster_1.health)
-print(monster_1.level)
-print(monster_1.has_tiara)
+# print(monster_1.monster)
+# print(monster_1.health)
+# print(monster_1.level)
+# print(monster_1.has_tiara)

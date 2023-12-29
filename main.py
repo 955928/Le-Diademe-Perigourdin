@@ -2,13 +2,15 @@ import hero
 import class_Monster
 
 # on met un message de bienvenue dans le jeu
-
+print(f"Welcome to The Legend of Perigordian Diadem, \n The search of Perigordian Diadem is getting complicated, help Jack to defeat monsters and to recover the Diadem !")
 # on instancie un heros : hero = Hero(entrer les paramètres, health = 100)
+hero_1 = Hero("Jack", 100)
+print(hero_1)
 
 # on entre dans le monde niveau 1
-
+print(f"Welcome to first level")
 # on instancie un monstre du niveau du monde 1 : monster = Monster(level = 1 = niveau du monde, heatlh = 100)
-
+monster_1 = 
 # on mets un message pour indiquer la vie du héros et la vie du monstre
 
 # on démarre la boucle while avec les arguments suivants : vie du héros <= 0 ou vie du monstre <= 0
@@ -39,17 +41,3 @@ import class_Monster
         # coder dans le fichier main un truc du genre hero.health = hero.health - monster.attack
 
 # on recommence
-
-
-
-# def play(self):
-#         print (f"Welcome to The Legend of Perigordian Diadem, \n The search of Perigordian Diadem is getting complicated, help Jack to defeat monsters and to recover the Diadem ! \n    Press 1 if you want to launch an attack \n    Press 2 if you want to drink a potion \n    For your information, the number of potions you have left is {self.potions}")
-
-#         while True: 
-#             action = input(": ")
-
-#             if action == "1":
-#                 self.use_attack()
-#             elif action == "2":
-#                 self.use_potion()
-#             else:
