@@ -9,7 +9,9 @@ class Monster:
         if self.monster == "Titan":
             self.level = 10
             self.health = 200
+            self.health = 200
             self.attack = 40
+            self.has_tiara = True
             self.has_tiara = True
             print("Oh tremble in the presence of the notorius Titan")
 
@@ -17,15 +19,19 @@ class Monster:
 
         elif self.monster == "Minotaur":
             self.health = 150
+            self.health = 150
             self.level = 5
             self.attack = 15
+            self.has_tiara = False
             self.has_tiara = False
             print("The Minotaur has arisen!Beware of his might!")
 
         else:
             self.health = 30
+            self.health = 30
             self.level = 1
             self.attack = 5
+            self.has_tiara = False
             self.has_tiara = False
             print("You are now facing a Goblin")
 
