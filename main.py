@@ -31,11 +31,12 @@ while hero_1.health > 0 and monster_1.health > 0:
     hero_1.play(monster_1)
 
     print(monster_1.health)
+    
+    print (f"{monster_1.monster} has {monster_1.health} health")
 
-
-print (f"{hero_1.name} has {hero_1.health} health")
-print (f"{monster_1.monster} has {monster_1.health} health")
-
+    monster_1.get_attack(hero_1)
+    
+    print (f"{hero_1.name} has {hero_1.health} health")
 # le heros fait son choix dans le terminal
 
     # si il fait 1 : on retire de la vie au monstre correspondant à l'attaque du héros --> méthode use_attack

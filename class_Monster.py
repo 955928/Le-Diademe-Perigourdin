@@ -2,6 +2,7 @@ import random
 
 class Monster:
     def __init__(self):
+    def __init__(self):
 
         self.monster = random.choice(["Goblin", "Minotaur", "Titan"])
 
@@ -65,10 +66,10 @@ monster_1 = Monster()
 
 
 
-print(monster_1.monster)
-print(monster_1.health)
-print(monster_1.level)
-print(monster_1.has_tiara)
+# print(monster_1.monster)
+# print(monster_1.health)
+# print(monster_1.level)
+# print(monster_1.has_tiara)
 
 
 

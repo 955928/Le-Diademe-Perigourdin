@@ -33,7 +33,18 @@ class Hero:
 
         
         action = input(": ")
+    def play(self, monster):
+        print (f"Press 1 if you want to launch an attack \n    Press 2 if you want to drink a potion \n    For your information, the number of potions you have left is {self.potions}")
 
+        
+        action = input(": ")
+
+        if action == "1":
+            self.use_attack(monster)
+        elif action == "2":
+            self.use_potion()       
+        else:
+            print("You should choose between 1 or 2")
         if action == "1":
             self.use_attack(monster)
         elif action == "2":
@@ -47,11 +58,14 @@ class Hero:
  
 
 # jack = Hero("Jack", 100)
+# jack = Hero("Jack", 100)
 
+# print(jack.health)
 # print(jack.health)
 
 
         
+# jack.play()
 # jack.play()
 
 # jack.use_attack()
