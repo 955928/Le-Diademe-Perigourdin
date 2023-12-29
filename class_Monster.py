@@ -1,6 +1,7 @@
 import random
 
 class Monster:
+    
     def __init__(self):
 
         self.monster = random.choice(["Goblin", "Minotaur", "Titan"])
@@ -30,7 +31,7 @@ class Monster:
             print("You are now facing a Goblin")
 
 
-    def get_attack(self, attack):
+    def get_attack(self, name):
 
         name.health -= self.attack
         
@@ -38,22 +39,25 @@ class Monster:
 
 
     def get_damage(self, name):
+       
 
         self.health -= name.attack
         
+        
         if self.health == 0:
-            print(f"After having suffered {name.attack} points in damages, the {self.monster} now has {self.health} points in health")
-            print(f"Victory!The {self.monster} has been defeated")
-            
-            
-            if "Titan" in self.monster == 0:
+            if self.health in "Titan" in self.monster:
                 print("The Titan has left behind the infamous Tiara of Perigourdin")
                 
             else:
                 print("Goodluck little one")
             
+            print(f"After having suffered {name.attack} points in damages, the {self.monster} now has {self.health} points in health")
+            print(f"Victory!The {self.monster} has been defeated")
+            
+
 
         else:
+            
             print(f"After having suffered {self.attack} the {self.monster} now has {self.health} points in health")
             
     
