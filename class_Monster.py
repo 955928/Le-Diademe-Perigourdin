@@ -59,7 +59,8 @@ class Monster:
 
 
 
-monster_1 = Monster(150,10)
+monster_1 = Monster()
+
 
 
 
