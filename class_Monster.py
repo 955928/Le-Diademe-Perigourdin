@@ -24,7 +24,7 @@ class Monster:
             self.attack = 15
             self.has_tiara = False
             self.has_tiara = False
-            print("The Minotaur has arisen!Beware of his might!")
+            print("The Minotaur has arisen! Beware of his might!")
 
         else:
             self.health = 30
@@ -36,9 +36,9 @@ class Monster:
             print("You are now facing a Goblin")
 
 
-    def get_attack(self, hero):
+    def get_attack(self, name):
 
-        hero.health -= self.attack
+        name.health -= self.attack
 
         print(f"The {self.monster} has inflicted {self.attack} points in damages")
 
