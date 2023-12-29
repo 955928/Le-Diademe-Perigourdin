@@ -22,17 +22,17 @@ class Monster:
 class Goblin(Monster): 
     level = 1
        
-    def get_attack(self,attack):
+    def get_attack(self, ):
         
-        self.attack == 5      
+        self.attack = 5      
     pass    
  
 class Minotaur(Monster):
     level = 5
     
-    def get_attack(self,attack):
+    def get_attack(self):
         
-        self.attack == 15
+        self.attack = 15
         00
     pass    
 
@@ -40,6 +40,6 @@ class Titan(Monster):
     level = 10
     
     def get_attack(self,attack):
-        self.attack == 40
+        self.attack = 40
     pass
            
