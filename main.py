@@ -12,7 +12,6 @@ monster_1 = Monster()
 # on mets un message pour indiquer la vie du héros et la vie du monstre
 print (f"{hero_1.name} has {hero_1.health} health")
 print (f"{monster_1.monster} has {monster_1.health} health")
-
 print (f"{hero_1.name} starts first")
 
 while hero_1.health > 0 and monster_1.health > 0:
@@ -26,6 +25,8 @@ while hero_1.health > 0 and monster_1.health > 0:
 # on propose au héros un choix (1 : attaquer ou 2: potion) --> méthode play
     hero_1.is_dead()
     hero_1.play(monster_1)
+    print(hero_1.health)
+    print(monster_1.health)
     monster_1.get_attack(hero_1)
 # le heros fait son choix dans le terminal
 
@@ -35,6 +36,7 @@ while hero_1.health > 0 and monster_1.health > 0:
     # si il fait 2 : on ajoute de la vie au héros correspondant à la vie rendue par la potion --> méthode use_potion
     # si il fait une autre option : erreur choisir entre 1 et 2
 hero_1.is_dead()
+monster_1.is_dead()
 # TOUR DU MONSTRE (AUTOMATIQUE)
 
 # quand le joueur(héros) à finit son tour, le monstre contre attaque en retirant la vie au héros

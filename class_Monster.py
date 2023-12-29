@@ -9,7 +9,7 @@ class Monster:
         if self.monster == "Titan":
             self.level = 10
             self.health = 200
-            self.attack = 40
+            self.attack = 20
             self.has_tiara = True
             print("Oh tremble in the presence of the notorius Titan")
 
@@ -25,7 +25,7 @@ class Monster:
         else:
             self.health = 30
             self.level = 1
-            self.attack = 5
+            self.attack = 10
             self.has_tiara = False
             print("You are now facing a Goblin")
 
@@ -56,7 +56,11 @@ class Monster:
         else:
             print(f"After having suffered {self.attack} the {self.monster} now has {self.health} points in health")
             
-    
+    def is_dead(self):
+        if self.health > 0:
+            print (f"{self.monster} has {self.health} health points - He is alive and can fight back Jake")
+        else:
+            print(f"{self.monster} is dead... Jake is the best")
 
 
 
