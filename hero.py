@@ -14,6 +14,7 @@ class Hero:
 
     def use_potion(self, potion_health = 50):
         self.health = self.health + potion_health
+        self.potions = self.potions - 1
         print (f"{self.name} drinks a potion and recovers for {potion_health} health points - He has now {self.health} health")
 
     def is_dead(self):

@@ -1,43 +1,66 @@
+import random
+
 class Monster:
-    def __init__(self,name, health, level):
-        self.name = name
+    def __init__(self, health, level):
+
+        self.monster = random.choice(["Goblin", "Minotaur", "Titan"])
         self.health = health
         self.level = level
-       
-        if level >= 5:
-            self.has_tiara == True
-        else:
-            self.has_tiara == False
         
+
+        random.choice(self.monster)
+        
+      
+        
+        if self.monster == "Titan":
+            self.level = 10
+            self.attack = 40
+            self.has_tiara = True
+            print("Oh tremble in the presence of the notorius Titan")
+    
+            
+            if self.health == 0:
+                print("The TiTan has left behind the infamous Tiara of Perigourdin ")
+    
+            else:
+                print("Good luck little one!Try again")
+
+            
+        
+        elif self.monster == "Minotaur":
+            self.level = 5
+            self.attack = 15
+            self.has_tiara = False
+            print("The Minotaur has arisen!Beware of his might!")
+        
+        else:
+            self.level = 1
+            self.attack = 5
+            self.has_tiara = False
+            print("You are now facing a Goblin")
+             
         
     def get_attack(self,attack):
+        
         self.attack = attack
-        return f"You have suffered{self.attack}"
+        print(f"The {self.monster} has inflicted{self.attack} points in damages")
+    
         
     def get_damage(self):
-        self.health -= self.attack
-        return f"After having suffered {self.attack} you now have {self.health} points in health"
-    
-    
-class Goblin(Monster): 
-    level = 1
-       
-    def get_attack(self,attack):
         
-        self.attack == 5      
-    pass    
- 
-class Minotaur(Monster):
-    level = 5
-    
-    def get_attack(self,attack):
-        self.attack == 15
-    pass    
+        self.health -= self.attack
+        
+        if self.health > 0:
+            print(f"After having suffered {self.attack} the {self.monster} now has {self.health} points in health")
+        
+        else:
+            print(f"After having suffered {self.attack} the {self.monster} now has {self.health} points in health")
+            print(f"Victory!The {self.monster} has been defeated")
+            
+            
 
-class Titan(Monster):
-    level = 10
-    
-    def get_attack(self,attack):
-        self.attack == 40
-    pass
-           
+monster_1 = Monster(100, 1)
+print(monster_1.monster)
+print(monster_1.health)
+print(monster_1.level)
+print(monster_1.has_tiara)
