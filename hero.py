@@ -8,9 +8,10 @@ class Hero:
         self.has_tiara = has_tiara
         self.dead_flag = dead_flag
 
-    def use_attack(self, attack = 10):
-        self.attack = attack
-        print (f"{self.name} attacks the monster and removes {self.attack} health points")
+    def use_attack(self, monster, attack = 100):
+        monster.health -= attack
+
+        print (f"{self.name} attacks the monster and removes {attack} health points")
 
     def use_potion(self, potion_health = 50):
         self.health = self.health + potion_health
@@ -27,35 +28,35 @@ class Hero:
         
             
 
-    def play(self):
-        print (f"Welcome to The Legend of Perigordian Diadem, \n The search of Perigordian Diadem is getting complicated, help Jack to defeat monsters and to recover the Diadem ! \n    Press 1 if you want to launch an attack \n    Press 2 if you want to drink a potion \n    For your information, the number of potions you have left is {self.potions}")
+    def play(self, monster):
+        print (f"Press 1 if you want to launch an attack \n    Press 2 if you want to drink a potion \n    For your information, the number of potions you have left is {self.potions}")
 
-        while True: 
-            action = input(": ")
+        
+        action = input(": ")
 
-            if action == "1":
-                self.use_attack()
-            elif action == "2":
-                self.use_potion()
-                
-            else:
-                print("You should choose between 1 or 2")
+        if action == "1":
+            self.use_attack(monster)
+        elif action == "2":
+            self.use_potion()       
+        else:
+            print("You should choose between 1 or 2")
 
             #Code pour alterner un tour chacun entre héro et monstre
                 
     
  
 
-jack = Hero("Jack", 100)
+# jack = Hero("Jack", 100)
 
-print(jack.health)
+# print(jack.health)
 
 
         
-jack.play()
+# jack.play()
 
 # jack.use_attack()
 # # jack.use_potion()
 # # jack.use_potion()
 # jack.is_dead()
 # print(jack.dead_flag)
+
