@@ -1,7 +1,7 @@
 import random
 
 class Monster:
-    def init(self):
+    def __init__(self):
 
         self.monster = random.choice(["Goblin", "Minotaur", "Titan"])
 
