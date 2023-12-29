@@ -23,29 +23,39 @@ class Hero:
         else:
             print(f"{self.name} is dead... game over!")
             self.dead_flag = True
+            #break
+        
+            
 
     def play(self):
-        print (f"Chose an action : 1 : attack or 2 : drink a potion ; info --> potions left : {self.potions}")
-        action = input()
-        if action == "1":
-            self.use_attack()
-        elif action == "2":
-            self.use_potion()
-        else:
-            print("You should choose between 1 or 2")
+        print (f"Welcome to The Legend of Perigordian Diadem, \n The search of Perigordian Diadem is getting complicated, help Jack to defeat monsters and to recover the Diadem ! \n    Press 1 if you want to launch an attack \n    Press 2 if you want to drink a potion \n    For your information, the number of potions you have left is {self.potions}")
+
+        while True: 
+            action = input(": ")
+
+            if action == "1":
+                self.use_attack()
+            elif action == "2":
+                self.use_potion()
+                
+            else:
+                print("You should choose between 1 or 2")
+
+            #Code pour alterner un tour chacun entre héro et monstre
+                
     
  
 
-sami = Hero("Sami", 100)
+jack = Hero("Jack", 100)
 
-print(sami.health)
+print(jack.health)
 
 
         
-sami.play()
+jack.play()
 
-# sami.use_attack()
-# # sami.use_potion()
-# # sami.use_potion()
-# sami.is_dead()
-# print(sami.dead_flag)
+# jack.use_attack()
+# # jack.use_potion()
+# # jack.use_potion()
+# jack.is_dead()
+# print(jack.dead_flag)
